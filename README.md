@@ -4,6 +4,8 @@ A small project to display and send temperature and humidity information
 to the timeseries database [Seriesly][1] for later study. Built
 for ESP8266/Wemos-D1 boards running MicroPython.
 
+![Example Image][example_image]
+
 ## Hardware
 
 For this project, I used the following items:
@@ -48,3 +50,4 @@ accessing the MicroPython REPL and running the following commands:
 [7]: https://www.wemos.cc/product/dht-pro-shield.html
 [8]: https://www.wemos.cc/product/oled-shield.html
 [9]: https://github.com/adafruit/ampy
+[example_image]: https://raw.githubusercontent.com/OldhamMade/ESP8266-OLED-dht-micropython-seriesly/master/example.jpg
