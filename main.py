@@ -50,7 +50,7 @@ def publish():
     resp.close()
 
     if status != 201:
-        log.warn('could not store %s', data)
+        log.warning('could not store %s', data)
         display.error()
         return False
 

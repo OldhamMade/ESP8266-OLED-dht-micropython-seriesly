@@ -12,7 +12,7 @@ def connect():
     global net
     net = WLAN(STA_IF)
     if not net.isconnected():
-        log.warn("no network, attempting to connect to %s", settings.WIFI_SSID)
+        log.warning("no network, attempting to connect to %s", settings.WIFI_SSID)
         net.active(True)
         net.connect(settings.WIFI_SSID, settings.WIFI_PW)
         while not net.isconnected():
@@ -25,4 +25,4 @@ def status():
     try:
         log.info('network config: %s', net.ifconfig())
     except AttributeError:
-        log.warn('network not connected')
+        log.warning('network not connected')
